@@ -1,0 +1,57 @@
+body 
+{ 
+	font-size : 15px; 
+	font-family : Arial, Helvetica, Geneva, sans-serif; 
+	padding: 20px;
+}
+
+.largeText
+{
+  font-size:20px;
+  font-weight:bold;
+}
+
+.rounded
+{
+  width: 100%;
+  max-width:600px;
+  padding: 16px;
+  border: 2px solid #dddddd;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -o-border-radius: 6px;
+  border-radius:6px;
+}
+
+.a2p-h1
+{
+  font-size:15px; 
+  font-weight:bold;
+}
+
+.a2p-content
+{
+  padding:4px;
+}
+
+.a2p-pad-bottom
+{
+	padding-bottom:15px;
+}
+
+.a2p-pad-top
+{
+	margin-top:15px;
+}
+
+.a2p-pad-left
+{
+  margin-left:10px;
+}
+
+.a2p-centered
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

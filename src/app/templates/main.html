@@ -1,0 +1,38 @@
+<!-- Angular 2 custom pipe demo -->
+<div class="container-fluid rounded">
+  <div class="row">
+    <img class="img-responsive a2p-logo-img" src="/assets/eyes.png">
+    <div>
+      <span class="pull-left">The Algorithmist</span>
+      <span class="pull-right">Angular 2 Custom Pipe</span>
+    </div>
+  </div>
+
+  <div class="row a2p-content">
+    <p class='a2p-h1'>Number Input/Formatting</p>
+
+    <div class="a2p-pad-top">
+      <label>Enter A Number</label>
+      <input [(ngModel)]="num" placeholder="0.0" (keydown)="__onKeyDown($event)" (keyup)="__update()">
+      <p>Dynamic formatting: {{_number}}</p>
+      <p>Scientific Notation Pipe: {{num | scientificNotation:3}}<p>
+      <p>Order Of Magnitude: {{_order}}</p>
+      <p>Digits After Decimal: {{_digits}}</p>
+    </div>
+
+    <div class="a2p-pad-top">
+      <p>Select formatting options below</p>
+    </div>
+
+    <div class="a2p-pad-top">
+      <input #useCommasCB type="checkbox" (change)="_useCommas = useCommasCB.checked; __update()"/> Use Commas<br/>
+
+      <input #useRoundingCB type="checkbox" (change)="_useRounding = useRoundingCB.checked; __update()"/> Use Rounding<br/>
+      <div class="a2p-pad-top a2p-pad-left" *ngIf="_useRounding">
+        <input type="radio" name="rnd" value="0.1" (change)="rounding=0.1; __update()" /> Nearest Tenth<br />
+        <input type="radio" name="rnd" value="0.5" (change)="rounding=0.5; __update()" /> Nearest Half<br />
+        <input type="radio" name="rnd" value="1.0" (change)="rounding=1.0; __update()" /> Nearest One
+      </div>
+    </div>
+  </div>
+</div>
