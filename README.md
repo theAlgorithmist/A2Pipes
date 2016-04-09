@@ -29,7 +29,7 @@ The goals of this demo are
 
 * Illustrate usage of Typescript Math Toolkit computational classes in an actual application setting
 * Add to the body of knowledge on how to create and run Angular 2/Typescript applications
-* Show how Excel-style analysis can be easily performed in a client-side application
+* Show how to implement a reusable, custom Angular 2 pipe
 * Create an excuse for another cup of coffee
 
 I hope that you find something instructive from the code and are interested in improving the demo in some way.
